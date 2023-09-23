@@ -1,0 +1,57 @@
+\begin{equation*}
+\begin{array}{ r l l }
+p_{xx}\left( t,x, y\begin{array}{ c }
+\textcolor[rgb]{0,0,1}{\geqslant }\\
+\textcolor[rgb]{1,0,0}{\leqslant }
+\end{array} 0\right) & =\left(\frac{1}{\pi }\right)^{3/2} & \left\{\frac{\pi \sqrt{\pi }}{4}\left( 1+2U_{x}^{2}\right)( 1+\mathrm{erf} \ U_{y}) +\right. \\
+ &  & \frac{\pi }{4}\left\{\left( 1+2U_{x}^{2}\right)\int\limits _{\textcolor[rgb]{0,0,1}{0} ,\textcolor[rgb]{1,0,0}{-\infty }}^{\textcolor[rgb]{0,0,1}{+\infty } ,\textcolor[rgb]{1,0,0}{0}} e^{-( \xi _{y} -U_{y})^{2}}\left( 2+\mathrm{erf} \ \left(\frac{x-1}{y} \xi _{y} -U_{x}\right) -\mathrm{erf} \ \left(\frac{x}{y} \xi _{y} -U_{x}\right)\right) +\right. \\
+ &  & \left. +\frac{2}{\sqrt{\pi }}\left(\int\limits _{\textcolor[rgb]{0,0,1}{0} ,\textcolor[rgb]{1,0,0}{-\infty }}^{\textcolor[rgb]{0,0,1}{+\infty } ,\textcolor[rgb]{1,0,0}{0}} e^{-( \xi _{y} -U_{y})^{2}}\left[ e^{-\left(\frac{x}{y} \xi _{y} -U_{x}\right)^{2}}\left(\frac{x}{y} \xi _{y} +U_{x}\right) -e^{-\left(\frac{x-1}{y} \xi _{y} -U_{x}\right)^{2}}\left(\frac{x-1}{y} \xi _{y} +U_{x}\right)\right) d\xi _{y}\right]\right\}\\
+ &  & \left. +\frac{1}{2\pi }\int\limits _{\textcolor[rgb]{0,0,1}{0} ,\textcolor[rgb]{1,0,0}{-\infty }}^{\textcolor[rgb]{0,0,1}{+\infty } ,\textcolor[rgb]{1,0,0}{0}} \rho _{\text{af}}\left(\tilde{t}\right)\sqrt{T_{\text{af}}\left(\tilde{t}\right)} e^{-\frac{\left( \xi _{y} -V_{\text{af}}\left(\tilde{t}\right)\right)^{2}}{T_{\text{af}}\left(\tilde{t}\right)}}\left[
+ \begin{array}{ c }
+ \\\\
+ \\
+\end{array}
+\frac{\sqrt{\pi }}{2}\mathrm{erf} \ k -ke^{-k^{2}}
+\begin{array}{ c }
+ \\\\
+ \\
+\end{array}
+\right]_{\frac{\frac{x-1}{y} \xi _{y}}{\sqrt{T_{\text{af}}\left(\tilde{t}\right)}}}^{\frac{\frac{x}{y} \xi _{y}}{\sqrt{T_{\text{af}}\left(\tilde{t}\right)}}} d\xi _{y}\right\}\\
+ &  & -\rho ( t,x,y) \cdot u^{2}( t,x,y)
+\end{array}
+\end{equation*}
+
+\begin{equation*}
+\begin{array}{ r l l }
+p_{yy}\left( t,x,y\begin{array}{ c }
+\textcolor[rgb]{0,0,1}{\geqslant }\\
+\textcolor[rgb]{1,0,0}{\leqslant }
+\end{array} 0\right) & =\left(\frac{1}{\pi }\right)^{3/2} & \left\{\frac{\pi \sqrt{\pi }}{4}\left( 1+2U_{y}^{2}\right)( 1-\mathrm{erf} \ U_{y}) -\frac{\pi }{2} U_{y} e^{-U_{y}^{2}}\right. \\
+ &  & +\frac{\pi }{2}\int\limits _{\textcolor[rgb]{0,0,1}{0} ,\textcolor[rgb]{1,0,0}{-\infty }}^{\textcolor[rgb]{0,0,1}{+\infty } ,\textcolor[rgb]{1,0,0}{0}} \xi _{y}^{2} e^{-( \xi _{y} -U_{y})^{2}}\left[ 2+\mathrm{erf} \ \left(\frac{x-1}{y} \xi _{y} -U_{x}\right) -\mathrm{erf} \ \left(\frac{x}{y} \xi _{y} -U_{x}\right)\right] d\xi _{y}\\
+ &  & \left. +\frac{1}{2\sqrt{\pi }}\int\limits _{\textcolor[rgb]{0,0,1}{0} ,\textcolor[rgb]{1,0,0}{-\infty }}^{\textcolor[rgb]{0,0,1}{+\infty } ,\textcolor[rgb]{1,0,0}{0}} \rho _{\text{af}}\left(\tilde{t}\right)\sqrt{T_{\text{af}}\left(\tilde{t}\right)^{-1}} e^{-\frac{\left( \xi _{y} -V_{\text{af}}\left(\tilde{t}\right)\right)^{2}}{T_{\text{af}}\left(\tilde{t}\right)}} \xi _{y}^{2}\left[\begin{array}{ c }
+ \\\\
+ \\
+\end{array}\mathrm{erf} \ k\begin{array}{ c }
+ \\\\
+ \\
+\end{array}\right]_{\frac{\frac{x-1}{y} \xi _{y}}{\sqrt{T_{\text{af}}\left(\tilde{t}\right)}}}^{\frac{\frac{x}{y} \xi _{y}}{\sqrt{T_{\text{af}}\left(\tilde{t}\right)}}} d\xi _{y}\right\}\\
+ &  & -\rho (t,x,y)\cdot v^{2} (t,x,y)
+\end{array}
+\end{equation*}
+
+\begin{equation*}
+\begin{array}{ r l l }
+p_{zz}\left( t,x,y\begin{array}{ c }
+\textcolor[rgb]{0,0,1}{\geqslant }\\
+\textcolor[rgb]{1,0,0}{\leqslant }
+\end{array} 0\right) & =\left(\frac{1}{\pi }\right)^{3/2}\frac{1}{4} & \left\{\pi \sqrt{\pi }( 1-\mathrm{erf} \ U_{y})\right. \\
+ &  & +\pi \int\limits _{\textcolor[rgb]{0,0,1}{0} ,\textcolor[rgb]{1,0,0}{-\infty }}^{\textcolor[rgb]{0,0,1}{+\infty } ,\textcolor[rgb]{1,0,0}{0}} e^{-( \xi _{y} -U_{y})^{2}}\left( 2+\mathrm{erf} \ \left(\frac{x-1}{y} \xi _{y} -U_{x}\right) -\mathrm{erf} \ \left(\frac{x}{y} \xi _{y} -U_{x}\right)\right) d\xi _{y}\\
+ &  & \left. +\frac{1}{\sqrt{\pi }}\int\limits _{\textcolor[rgb]{0,0,1}{0} ,\textcolor[rgb]{1,0,0}{-\infty }}^{\textcolor[rgb]{0,0,1}{+\infty } ,\textcolor[rgb]{1,0,0}{0}} \rho _{\text{af}}\left(\tilde{t}\right)\sqrt{T_{\text{af}}\left(\tilde{t}\right)} e^{-\frac{\left( \xi _{y} -V_{\text{af}}\left(\tilde{t}\right)\right)^{2}}{T_{\text{af}}\left(\tilde{t}\right)}}\left[\begin{aligned}
+ \\\\
+ \\
+\end{aligned}\mathrm{erf} \ ( k)\begin{aligned}
+ \\\\
+ \\
+\end{aligned}\right]_{\frac{\frac{x-1}{y} \xi _{y}}{\sqrt{T_{\text{af}}\left(\tilde{t}\right)}}}^{\frac{\frac{x}{y} \xi _{y}}{\sqrt{T_{\text{af}}\left(\tilde{t}\right)}}} d\xi _{y}\right\}
+\end{array}
+\end{equation*}

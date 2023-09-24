@@ -1,10 +1,10 @@
 \chapter{Results}
-In this chapter, we report on the findings from our investigation of the collisionless-flow regime in the context of different airfoil excitations. We present a detailed analysis of the results obtained from our simulations, which sheds light on the fundamental physics of the problem under consideration. Specifically, we explore the impact of various airfoil excitations on the gas state and the associated flow dynamics, providing insights into the underlying mechanisms that govern the behavior of the system. Our study offers a comprehensive view of the collisionless-flow regime, which has important implications for the design and optimization of microfluidic devices and other related applications.
+In this chapter, we report the findings from our investigation of the collisionless-flow regime in the context of different airfoil excitations. We present a detailed analysis of the results obtained from our simulations, which sheds light on the fundamental physics of the problem under consideration. Specifically, we explore the impact of various airfoil excitations on the gas state and the associated flow dynamics, providing insights into the underlying mechanisms that govern the behavior of the system.
 
 \section{Expressions of Hydrodynamic Fields in the Collisionless-Flow Regime}
 Understanding the behavior of hydrodynamic fields in the vicinity of an airfoil is crucial for predicting the aerodynamic performance of a body subjected to this flow regime. In this section, we present the analytic expressions of the hydrodynamic fields in the collisionless-flow regime. These expressions are derived directly by Eqs. \ref{eq:macro_number_density}--\ref{eq:macro_stress}, and rely on the airfoil function $\rho_\af^\pm\left(t,x\right)$ introduced in Eq. \ref{eq:rho_af}. By analyzing these expressions, we can gain insight into the complex interactions between the flow and the airfoil, and ultimately develop more accurate models for predicting aerodynamic behavior.
 
-In the free-molecular regime, molecules that are reflected from a airfoil carry information about the boundary without colliding with other molecules. As a result, at a particular location and time, these molecules combine the various airfoil states during a period, but at different times in the past. These times are known as "retarded times", which refer to the time delay between the emission of a molecule from the airfoil and its arrival at a particular location.
+In the free-molecular regime, molecules that are reflected from an airfoil carry information about the boundary without colliding with other molecules. As a result, at a particular location and time, these molecules combine the various airfoil states during a period, but at different times in the past. These times are known as "retarded times", which refer to the time delay between the emission of a molecule from the airfoil and its arrival at a particular location.
 
 We will consider a simplified scenario where the airfoil temperature and velocity, denoted as $T_\af$ and $V_\af$ respectively, depend solely on time and not on the spatial coordinate $x$. The retarded time, $\tilde{t}$, at which a molecule collides with the airfoil, depends on the measurement time $t$, the vertical position $y$ at which the measurement is taken, and the vertical molecular velocity $\xi_y$, and is given by $$\tilde{t}=t-\frac{y}{\xi_y}.$$
 \subsection{Density}
@@ -41,7 +41,7 @@ This pattern also holds for the other hydrodynamic fields, including velocity an
 \frac{1}{2\sqrt{\pi }}\int\limits _{\textcolor[rgb]{0,0,1}{0} ,\textcolor[rgb]{1,0,0}{-\infty }}^{\textcolor[rgb]{0,0,1}{+\infty } ,\textcolor[rgb]{1,0,0}{0}}\frac{\rho _{\text{af}}\left(\tilde{t}\right)}{\sqrt{T_{\text{af}}\left(\tilde{t}\right)}} e^{-\frac{\left( \xi _{y} -V_{\text{af}}\left(\tilde{t}\right)\right)^{2}}{T_{\text{af}}\left(\tilde{t}\right)}}\left[\mathrm{erf}\left(\frac{\frac{x}{y} \xi _{y}}{\sqrt{T_{\text{af}}\left(\tilde{t}\right)}}\right) -\mathrm{erf}\left(\frac{\frac{x-1}{y} \xi _{y}}{\sqrt{T_{\text{af}}\left(\tilde{t}\right)}}\right)\right] d\xi _{y}
 \label{eq:density_hitted}
 \end{gather}
-In fact, the symmetry mentioned in the previous paragraph is purely mathematical, and in reality, the hydrodynamic fields above and below the airfoil are not exactly symmetric on moment of time. As we will see in the graphical results further on, the fields are highly dependent on the choice of $T_\af$ and $V_\af$, as well as the fluid flow angle of attack which appears with $U_x$ and $U_y$.
+In fact, the symmetry mentioned in the previous paragraph is purely mathematical, and in reality, the hydrodynamic fields above and below the airfoil are not exactly symmetric on a moment in time. As we will see in the graphical results further on, the fields are highly dependent on the choice of $T_\af$ and $V_\af$, as well as the fluid flow angle of attack which appears with $U_x$ and $U_y$.
 
 The effects of the airfoil temperature and velocity, as well as the fluid flow angle of attack, can be observed in the different expressions of the hydrodynamic fields above and below the airfoil. These expressions show that the density, velocity, and stress fields are influenced by various factors, such as the flow velocity, the temperature and velocity of the airfoil, and the angle of attack. The effect of these factors on the fields will be demonstrated in the graphical results that follow, which will provide a more comprehensive understanding of the behavior of the hydrodynamic fields in the free-molecular flow regime.
 
@@ -85,7 +85,7 @@ Where the calculation of the total static pressure is done by\cite{kogan1969rare
     .
 \end{equation}
 
-In addition to the stress tensor components discussed previously, also presents results for the stress components in the limit where $y$ goes to zero, corresponding to high proximity to the airfoil. These results are of particular interest for the analysis of the lift and drag produced by the presence of the airfoil in the fluid flow. Specifically, the following includes the stress tensor components $p_{yy}$ and $p_{xy}$ in this limit, which exhibit complex behavior. By analyzing these stress components, it is able to gain insight into the mechanisms that govern the lift and drag produced by the airfoil, and ultimately develop more accurate models for predicting aerodynamic behavior (for $\eta$ recall Eq. \ref{eq:eta}).
+In addition to the stress tensor components discussed previously, we also presents results for the stress components in the limit where $y$ goes to zero, corresponding to high proximity to the airfoil. These results are of particular interest for the analysis of the lift and drag produced by the presence of the airfoil in the fluid flow. Specifically, the following includes the stress tensor components $p_{yy}$ and $p_{xy}$ in this limit, which exhibit complex behavior. By analyzing these stress components, it is able to gain insight into the mechanisms that govern the lift and drag produced by the airfoil, and ultimately develop more accurate models for predicting aerodynamic behavior (for $\eta$ recall Eq. \ref{eq:eta}).
 
 \begin{equation}
 \begin{aligned}
@@ -119,7 +119,7 @@ p_{xy}\left( t,x,0^{\pm }\right) =\frac{1}{2\sqrt{\pi }} U_{x}\left[ U_{y}\sqrt{
     \label{fig:steady_state}
 \end{wrapfigure}
 
-In this section, we transition from analytical derivations to a more visual representation, showcasing plots derived from the expressions discussed in the preceding section. Our emphasis will be on plots representing steady-state conditions and a specific simple unsteady scenario where the speed is 'Transonic' ($\frac{U_\infty^*}{U_{\mathrm{th}}^*} = \sqrt{U_x^2 + U_y^2} = 1$). In this scenario, the airfoil's temperature exhibits minor oscillations around the distant fluid temperature, and the airfoil's velocity shows slight oscillations around the $x$-axis. While the analytical expressions we've derived offer the flexibility to probe nearly every conceivable state, in this section, we've chosen to spotlight only select, straightforward cases to provide clarity and foundational understanding.
+In this subsection, we transition from analytical derivations to a more visual representation, showcasing plots derived from the expressions discussed in the preceding section. Our emphasis will be on plots representing steady-state conditions, a specific simple unsteady scenario where the speed is 'Transonic' ($\frac{U_\infty^*}{U_{\mathrm{th}}^*} = \sqrt{U_x^2 + U_y^2} = 1$). In this scenario, the airfoil's temperature exhibits minor oscillations around the distant fluid temperature, and the airfoil's velocity shows slight oscillations around the $x$-axis. After these two examples, we will also present a dipole-induces dynamics example, without any fluid flow. While the analytical expressions we've derived offer the flexibility to probe nearly every conceivable state, in this section, we've chosen to spotlight only select, straightforward cases to provide clarity and foundational understanding.
 
 \subsection{Steady-State} \label{sec:Steady-State}
 In the steady-state case, we delve into a scenario where the fluid flow velocity is distinctly "subsonic", with a magnitude given by $U_\infty = 0.1$. Here, the airfoil remains stationary along the $x$-axis, and its temperature is set to match the temperature of the distant fluid, ensuring a consistent thermal environment. Notably, the direction of the fluid flow aligns parallel to the orientation of the airfoil, specifically pointing towards the positive $x$-axis direction.
@@ -145,7 +145,7 @@ The visual representations in this subsection (Fig. \ref{fig:steady_state}) prim
     \end{minipage}
     \label{fig:unsteady_state}
 \end{wrapfigure}
-In the unsteady-state case, we venture into dynamic scenarios characterized by "Transonic" speeds, where $U_\infty = 1$. The airfoil, set at an angle of attack of $10$ degrees, exhibits minor oscillations around the distant fluid temperature. Additionally, the airfoil's velocity demonstrates slight oscillations around the $x$-axis, introducing an element of variability. This subsection offers visual representations (Fig. \ref{fig:unsteady_state}) that capture the intricate dynamics of these oscillations, both in terms of temperature and velocity. As we navigate through these plots, readers will gain a deeper understanding of the hydrodynamic fields under transonic and unsteady conditions, emphasizing the nuanced interplay between the airfoil's oscillatory behavior and the surrounding fluid dynamics.
+In the unsteady-state case, we venture into dynamic scenarios characterized by "Transonic" speeds, where $U_\infty = 1$. The airfoil, set at an angle of attack of $10$ degrees, exhibits minor oscillations around the distant fluid temperature. Additionally, the airfoil's velocity demonstrates slight oscillations around the $x$-axis, introducing an element of variability. This subsection offers visual representations (Fig. \ref{fig:unsteady_state}) that capture the intricate dynamics of these oscillations, both in terms of temperature and velocity. As we navigate through these plots, we will gain a deeper understanding of the hydrodynamic fields under transonic and unsteady conditions, emphasizing the nuanced interplay between the airfoil's oscillatory behavior and the surrounding fluid dynamics.
 
 \subsection{Dipole-Induced Dynamics}
 \begin{wrapfigure}{r}{0.6\textwidth}
@@ -168,7 +168,7 @@ In the unsteady-state case, we venture into dynamic scenarios characterized by "
 \end{wrapfigure}
 In the dipole-induced dynamics case, our exploration shifts towards the hydrodynamic field responses influenced by a dipole source setup. Distinct from both the steady-state and unsteady-state frameworks, this scenario abstains from introducing direct fluid flow. Instead, we perturb the steady conditions by applying alternating heating and cooling regimes to the airfoil. Administered at a notably elevated frequency, these thermal cycles trigger wave formations within the encompassing fluid medium.
 
-The drawings in this section (Fig. \ref{fig:dipole}) mainly show the differences in the density, speed, and pressure of the fluid. These graphical illustrations elucidate the variances between the predicted density and the standardized density of the fluid medium, coupled with the static pressure deviations. Expectedly, the dipole-induced dynamics give rise to wave patterns in the fluid, culminating in palpable shifts within the hydrodynamic landscapes.
+The drawings in this section (Fig. \ref{fig:dipole}) mainly show the differences in the density, speed, and pressure of the fluid. These graphical illustrations elucidate the variances between the predicted density and the standardized density of the fluid medium, coupled with the static pressure deviations.
 
 By looking into this, we want to better understand how the dipole sources affect the movement of the fluid. This highlights the relationship between the airfoil's heat-related movements and the fluid's behavior.
 
@@ -314,7 +314,7 @@ m=\frac{x}{y} \quad \quad ,\quad \quad \mu =\frac{U_{x} m}{1+m^2}
 \nonumber
 \end{gather}
 
-In Section \ref{sec:Steady-State}, the steady-state situation was discussed, where the velocity of fluid flow was distinctly in the subsonic range. Additionally, the airfoil was fixed along the x-axis, as visualized in Fig. \ref{fig:steady_state}. Nonetheless, we assumed notably large $y$ values in our current discussion. This implies that the findings from the steady-state scenario might not be of particular interest, as the density "wedge" manifests relatively near the $x$ axis.
+In Section \ref{sec:Steady-State}, the steady-state situation was discussed, where the velocity of fluid flow was distinctly in the subsonic range. Additionally, the airfoil was fixed along the $x$-axis, as visualized in Fig. \ref{fig:steady_state}. Nonetheless, we assumed notably large $y$ values in our current discussion. This implies that the findings from the steady-state scenario might not be of particular interest, as the density "wedge" manifests relatively near the $x$ axis.
 
 As we increase the fluid's velocity, the wedge sharpens and shifts rightwards, indicating an increase in $x$-values. This behavior is illustrated in Fig. \ref{fig:steady_state_superSonic}. The nature of the flow in Fig. \ref{fig:steady_state} might not yield intriguing findings due to its low-speed fluid flow characteristics.
 \begin{figure}[H]
@@ -363,6 +363,7 @@ and recalling Eqs. \ref{eq:density_free} and \ref{eq:density_hitted}, we have
 \end{array} 0\right) & =1 & -\frac{1}{\sqrt{\pi }}\int\limits _{\textcolor[rgb]{0,0,1}{0} ,\textcolor[rgb]{1,0,0}{-\infty }}^{\textcolor[rgb]{0,0,1}{+\infty } ,\textcolor[rgb]{1,0,0}{0}} e^{-\xi _{y}^{2}}\,\erf\left(\frac{1}{2y} \xi _{y}\right) d\xi _{y}\\
  &  & +\frac{1}{\sqrt{\pi }}\int\limits _{\textcolor[rgb]{0,0,1}{0} ,\textcolor[rgb]{1,0,0}{-\infty }}^{\textcolor[rgb]{0,0,1}{+\infty } ,\textcolor[rgb]{1,0,0}{0}}\frac{1}{1+\epsilon \sin\left( \omega \tilde{t}\right)} e^{-\frac{\xi _{y}^{2}}{T_{\text{af}}\left(\tilde{t}\right)}}\mathrm{erf}\left(\frac{\frac{1}{2y} \xi _{y}}{\sqrt{1+\epsilon \sin\left( \omega \tilde{t}\right)}}\right) d\xi _{y}
 \end{array}
+.
 \end{equation*}
 Adopting a first-order Taylor expansion for $\erf z$, $e^{-z^2}$ and $(1+z)^a$, this simplifies further to:
 \begin{equation}\label{eq:rho_before_Abramowitz}
@@ -372,6 +373,7 @@ Adopting a first-order Taylor expansion for $\erf z$, $e^{-z^2}$ and $(1+z)^a$, 
 \end{array} 0\right) =1\cpm \frac{\epsilon }{\pi y}\int\limits _{0}^{\infty }\left( \xi _{y}^{2} -\frac{3}{2}\right)\sin\left( \omega \tilde{t}\right) \cdot \xi _{y} e^{-\xi _{y}^{2}} d\xi _{y}
 .
 \end{equation}
+
 To derive a general solution for the following form,
 \begin{equation*}
     \begin{aligned}
@@ -407,8 +409,7 @@ With the above formulation, it becomes feasible to determine Eq. \ref{eq:rho_bef
 1-\frac{1}{2\pi y} \cpm \\
 \cpm \left\{\frac{1}{2\pi y} + \epsilon \frac{\omega }{8\Omega \sqrt{3\pi }} e^{-\frac{3}{2} \Omega }\left[( 4\Omega -3)\cos\left( \omega t-\frac{3\sqrt{3}}{2} \Omega \right) -3\sqrt{3}\sin\left( \omega t-\frac{3\sqrt{3}}{2} \Omega \right)\right]\right\}
 \end{multline}
-Utilizing the extensive application of \( \Omega =\left(\omega y/2\right)^{2/3} \), we proceed to compute values for \( p_{xx} \), \( p_{yy} \), and \( p_{zz} \):
-while making extensive use of the notation $\Omega =\left(\omega y/2\right)^{2/3}$. We can now advance to the calculations for $p_{xx}$, $p_{yy}$ and $p_{zz}$:
+While making extensive use of the notation $\Omega =\left(\omega y/2\right)^{2/3}$. We can now advance to the calculations for $p_{xx}$, $p_{yy}$ and $p_{zz}$:
 
 \begin{multline}
 p_{xx}\left( t,x=1/2,y\begin{array}{ c }
@@ -440,7 +441,7 @@ p_{zz}\left( t,x=1/2,y\begin{array}{ c }
 \cpm \left\{\frac{1}{4\pi y} +\epsilon \frac{\omega }{16\Omega \sqrt{3\pi }} e^{-\frac{3}{2} \Omega }\left[( 4\Omega -1)\cos\left( \omega t-\frac{3\sqrt{3}}{2} \Omega \right) -\sqrt{3}\sin\left( \omega t-\frac{3\sqrt{3}}{2} \Omega \right)\right]\right\}
 \end{multline}
 
-We are now set to present a comprehensive visualization of our findings. By juxtaposing the results derived from our model against the analytical solutions for both density and pressure, we aim to emphasize the efficacy and precision of our approximation. As we navigate through the comparative graphs and figures, the closeness of our evaluation to the analytical benchmarks should provide compelling evidence of the adequacy of our approximation. The objective is to convincingly demonstrate that, despite being an approximation, our methodology provides insights that align closely with the established analytical solutions.
+We are now set to present a comprehensive visualization of our findings. By juxtaposing the results derived from our model against the exact solutions for both density and pressure, we aim to emphasize the efficacy and precision of our approximation. As we navigate through the comparative graphs and figures, the closeness of our evaluation to the exact benchmarks should provide compelling evidence of the adequacy of our approximation. The objective is to convincingly demonstrate that, despite being an approximation, our methodology provides insights that align closely with the established exact solutions.
 
 \begin{figure}[H]
     \centering
@@ -448,4 +449,4 @@ We are now set to present a comprehensive visualization of our findings. By juxt
     \caption{\footnotesize{Comparison of the exact and approximated solutions. The results for negative $y$ values are not shown due to symmetry with respect to $y=0$. The perturbation follows Eq. \ref{eq:abeam_chord_center_Taf} with $\epsilon = 0.1$ and $\omega = 1$. The upper subplot depicts the density field with the hydrodynamic field on the left $y$-axis and the relative error on the right $y$-axis. The subplot below corresponds to the pressure field, again highlighting the hydrodynamic field on the left $y$-axis and the relative error on the right $y$-axis.}}
     \label{fig:ACC_comparison}
 \end{figure}
-The visualization on Fig. \ref{fig:ACC_comparison} underscores a commendable alignment between the approximation and the exact solution. Delving deeper into the relative error, it remains significantly beneath the $1\%$ threshold, solidifying the precision of our approximation. A noteworthy observation is the gradual diminishment of the relative error as the values of $y$ escalate. Specifically, beyond $5$ chord lengths, the approximation's relative error becomes nearly indiscernible, closely converging to zero. This reinforces the robustness of our approximation, especially for larger $y$ values.
+The visualization on Fig. \ref{fig:ACC_comparison} underscores a commendable alignment between the approximation and the exact solution. Delving deeper into the relative error, it remains significantly beneath the $0.1\%$ threshold, solidifying the precision of our approximation. A noteworthy observation is the gradual diminishment of the relative error as the values of $y$ escalate. Specifically, beyond $5$ chord lengths, the approximation's relative error becomes nearly indiscernible, closely converging to zero. This reinforces the robustness of our approximation, especially for larger $y$ values.
